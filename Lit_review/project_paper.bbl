@@ -20,30 +20,39 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
+\bibitem{zhangLEOMegaConstellations2022}
+\BIBentryALTinterwordspacing
+J.~Zhang, Y.~Cai, C.~Xue, Z.~Xue, and H.~Cai, ``{{LEO Mega Constellations}}: {{Review}} of {{Development}}, {{Impact}}, {{Surveillance}}, and {{Governance}},'' vol. 2022, p. 2022/9865174. [Online]. Available: \url{https://spj.science.org/doi/10.34133/2022/9865174}
+\BIBentrySTDinterwordspacing
+
+\bibitem{idanAegisSatSatelliteCybersecurity2025}
+\BIBentryALTinterwordspacing
+R.~Idan, R.~Peled, A.~Ben Siman~Tov, E.~Markus, B.~Zadov, O.~Chodeda, Y.~Fadida, O.~Holschke, J.~Plachy, Y.~Elovici, and A.~Shabtai, ``{{AegisSat}}: {{A Satellite Cybersecurity Testbed}},'' in \emph{Proceedings 2025 {{Workshop}} on {{Security}} of {{Space}} and {{Satellite Systems}}}.\hskip 1em plus 0.5em minus 0.4em\relax Internet Society. [Online]. Available: \url{https://www.ndss-symposium.org/wp-content/uploads/spacesec25-final69.pdf}
+\BIBentrySTDinterwordspacing
+
+\bibitem{kazemiOrbitDeterminationSpace2024}
+\BIBentryALTinterwordspacing
+S.~Kazemi, N.~L. Azad, K.~A. Scott, H.~B. Oqab, and G.~B. Dietrich, ``Orbit determination for space situational awareness: {{A}} survey,'' vol. 222, pp. 272--295. [Online]. Available: \url{https://www.sciencedirect.com/science/article/pii/S0094576524003308}
+\BIBentrySTDinterwordspacing
+
 \bibitem{TwolineElementSets2012}
 \BIBentryALTinterwordspacing
 Two-line element sets - {{Practice}} and use. ResearchGate. [Online]. Available: \url{https://www.researchgate.net/publication/289774073_Two-line_element_sets_-_Practice_and_use}
 \BIBentrySTDinterwordspacing
-
-\bibitem{chaos8_website}
-C.~Kloss, C.~C. Finlay, N.~Olsen, L.~T{\o}ffner-Clausen, N.~Gillet, and A.~Grayver, ``{CHAOS-8} geomagnetic field model,'' DTU Space, \url{https://www.spacecenter.dk/files/magnetic-models/CHAOS-8/}, 2026, accessed: 2026-05-13.
 
 \bibitem{spacetrack2026}
 \BIBentryALTinterwordspacing
 {18th Space Defense Squadron}, ``Space-track.org,'' \url{https://www.space-track.org}, United States Space Force, 2026, accessed: 2026-05-19. [Online]. Available: \url{https://www.space-track.org}
 \BIBentrySTDinterwordspacing
 
-\bibitem{kenneally2020basilisk}
-P.~Kenneally, H.~Schaub, and S.~Piggott, ``Basilisk: A flexible, scalable and modular astrodynamics simulation framework,'' \emph{AIAA Journal of Aerospace Information Systems}, vol.~17, no.~9, pp. 496--507, September 2020.
-
-\bibitem{lovellAnglesOnlyInitial2018}
+\bibitem{finlayCHAOS7GeomagneticField2020}
 \BIBentryALTinterwordspacing
-T.~A. Lovell, A.~J. Sinclair, and B.~Newman, ``Angles {{Only Initial Orbit Determination}}: {{Comparison}} of {{Relative Dynamics}} and {{Inertial Dynamics Approaches}} with {{Error Analysis}},'' in \emph{2018 {{Space Flight Mechanics Meeting}}}.\hskip 1em plus 0.5em minus 0.4em\relax {American Institute of Aeronautics and Astronautics}. [Online]. Available: \url{https://arc.aiaa.org/doi/10.2514/6.2018-0475}
+C.~C. Finlay, C.~Kloss, N.~Olsen, M.~D. Hammer, L.~Tøffner-Clausen, A.~Grayver, and A.~Kuvshinov, ``The {{CHAOS-7}} geomagnetic field model and observed changes in the {{South Atlantic Anomaly}},'' vol.~72, no.~1, p. 156. [Online]. Available: \url{https://doi.org/10.1186/s40623-020-01252-9}
 \BIBentrySTDinterwordspacing
 
-\bibitem{mahmudPhysicsinformedNeuralNetwork2026}
+\bibitem{sunLowEarthOrbitDetermination2016}
 \BIBentryALTinterwordspacing
-M.~S. Mahmud, Y.~Jiang, R.~Liu, Z.~Zhou, and B.~Xu, ``Physics-informed neural network for predicting orbital parameters of {{Low Earth Orbit}} satellites using two line element dataset,'' vol.~77, no.~11, pp. 11\,110--11\,128. [Online]. Available: \url{https://linkinghub.elsevier.com/retrieve/pii/S0273117726000414}
+X.~Sun, P.~Chen, C.~Macabiau, and C.~Han, ``Low-{{Earth Orbit Determination}} from {{Gravity Gradient Measurements}},'' vol. 123, pp. 350--362. [Online]. Available: \url{https://www.sciencedirect.com/science/article/pii/S0094576515301193}
 \BIBentrySTDinterwordspacing
 
 \end{thebibliography}

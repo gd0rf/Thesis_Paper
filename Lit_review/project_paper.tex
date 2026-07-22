@@ -47,68 +47,98 @@
 % ============================================================
 %  Acronyms
 % ============================================================
-%\begin{acronym}[GNSS]
-%\end{acronym}
+\begin{acronym}[GNSS]
+  \acro{LEO}{Low Earth Orbit}
+  \acro{TLE}{Two Line Elements}
+  \acro{JSPOC}{Joint Space Operations Ceneter}
+\end{acronym}
 
 % ============================================================
 %  SECTION I - INTRODUCTION
 % ============================================================
 \section{Introduction}
+Space has been at the forefront of research and exploration for decades and much of modern technology has come to rely on the inovations and architecture thats been built to maintain it. The largest growing component of space innovation involves the deployment of \ac{LEO} satellites\cite{zhangLEOMegaConstellations2022}. This greatly expanding font of new technology and ideas brings along its own challenges that range from security to new ways to track orbits \cite{idanAegisSatSatelliteCybersecurity2025,kazemiOrbitDeterminationSpace2024}. 
 
 
+\section{CubeSats}
 
-% ============================================================
-%  SECTION II - CubeSat/Satellite Security
-% ============================================================
-\section{CubeSate Security}
+\subsection{Security}
 
 
-% ============================================================
-%  SECTION III - Embedded Devices
-% ============================================================
-\section{Embedded Devices Security}
+\begin{table}[H]
+\centering
+\caption{Two-Line Element Set Field Definitions}
+\label{tab:tle_format}
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{cll}
+\hline
+\textbf{Line} & \textbf{Field} & \textbf{Content} \\
+\hline
+Title & -- & Satellite Name \\
+\hline
+1 & 1  & Line Number \\
+1 & 2  & Satellite Catalog Number \\
+1 & 3  & Classification (U/C/S) \\
+1 & 4  & International Designator (Launch Year) \\
+1 & 5  & International Designator (Launch Number) \\
+1 & 6  & International Designator (Launch Piece) \\
+1 & 7  & Epoch Year \\
+1 & 8  & Epoch (Day and Fractional Day) \\
+1 & 9  & First Derivative of Mean Motion (rev/day$^2$) \\
+1 & 10 & Second Derivative of Mean Motion (rev/day$^3$) \\
+1 & 11 & B* Drag Term (Earth radii$^{-1}$) \\
+1 & 12 & Ephemeris Type \\
+1 & 13 & Element Set Number \\
+1 & 14 & Checksum (modulo 10) \\
+\hline
+2 & 1  & Line Number \\
+2 & 2  & Satellite Catalog Number \\
+2 & 3  & Inclination (deg) \\
+2 & 4  & Right Ascension of Ascending Node (deg) \\
+2 & 5  & Eccentricity \\
+2 & 6  & Argument of Perigee (deg) \\
+2 & 7  & Mean Anomaly (deg) \\
+2 & 8  & Mean Motion (rev/day) \\
+2 & 9  & Revolution Number at Epoch \\
+2 & 10 & Checksum (modulo 10) \\
+\hline
+\end{tabular}}
+\end{table}
 
-
-% ============================================================
-%  SECTION IV - Automated Security
-% ============================================================
-\section{Automated Security}
-
-% ============================================================
-%  SECTION V - Naviagtion
-% ============================================================
 \section{Navigation}
+\ac{LEO} satellite use a variety of methods to assist in their own navigation and an organizartions ability to track them from the ground. The most common methods used to track a satellite form their ground is through \ac{TLE}s. \ac{TLE}s describe the orbital parameters, as seen in Table~\ref{acro:TLE}, that are required for the tracking and locating of specefic satellites during orbit\cite{TwolineElementSets2012}. They provide the specefic time and location that each \ac{LEO} satellite ocuppies to facilitate communication and to ensure that no satellite impacts another. The recordings of a satellites orbit are taken through observation at \ac{JSPOC} and provide consistent snapshot updates of currently recorded TLE's every 8 hours\cite{TwolineElementSets2012}. 
+A majority of these satellites have a mean motion of 90 minutes with an alititude(Circular) of 281.49 km\cite{spacetrack2026}. This provides only a few minutes in which the satellite can be contacted before it is out of range and continues until its next orbit. These minimal contact intervals make it vitally important to accuratly predict when contact can be made and what communications are of import to send during this window.
+
+\subsection{Alternative Naviagtion}
+\subsection{Magnetometer And Gravitometer}
+Alternative methods of navigation and orbit determination continue to be explored to provide more robust and accurate systems. A newly explored source of navigation is the use of satellite sensors, like magnetomoeter and gravitometer, in conjunction with accurate modeling to derive orbit parameters without specefic ground station interference\cite{finlayCHAOS7GeomagneticField2020,sunLowEarthOrbitDetermination2016}.
+%results of magnetometer
+
+%results of gravitometer
+
+\subsection{Other Methods}
 
 
-% ============================================================
-%  SECTION VI - ML
-% ============================================================
-\section{Machine Learning}
+%results
+
+\subsection{ML Models}
+\subsection{Machine Learning}
+%RF, Ridge, etc..
+
+%results
+\subsection{Neural Networks}
+%LTSMs, TCNs, and PINNs
 
 
+%results
 
-% ============================================================
-%  SECTION VII - Magnetic Field
-% ============================================================
-\section{Magnetic Field}
-
-
-
-% ============================================================
-%  SECTION VIII - Orbital Params
-% ============================================================
-\section{Orbital Params}
-
-\subsection{Orbital Period}
-
-\subsection{Euler-Like Angles}
 
 
 % ============================================================
 %  REFERENCES
 % ============================================================
-%\bibliographystyle{IEEEtran}
-%\bibliography{references}
+\bibliographystyle{IEEEtran}
+\bibliography{references}
 
 % ============================================================
 %  APPENDIX - PARTIAL-WINDOW RESIDUAL PLOTS
