@@ -16,51 +16,61 @@ Warning--empty year in zhangLEOMegaConstellations2022
 Warning--empty year in idanAegisSatSatelliteCybersecurity2025
 Warning--empty journal in kazemiOrbitDeterminationSpace2024
 Warning--empty year in kazemiOrbitDeterminationSpace2024
+Warning--empty journal in psiakiGroundTestsMagnetometerbased1993
+Warning--empty year in psiakiGroundTestsMagnetometerbased1993
 Warning--empty journal in finlayCHAOS7GeomagneticField2020
 Warning--empty year in finlayCHAOS7GeomagneticField2020
 Warning--empty journal in sunLowEarthOrbitDetermination2016
 Warning--empty year in sunLowEarthOrbitDetermination2016
+Warning--empty journal in butcherKalmanFilteringObservability2017
+Warning--empty year in butcherKalmanFilteringObservability2017
+Warning--empty journal in psiakiAutonomousMagneticNavigation
+Warning--empty year in psiakiAutonomousMagneticNavigation
+Warning--empty journal in ningAnalysisFilteringMethods2011
+Warning--empty year in ningAnalysisFilteringMethods2011
+Warning--empty journal in deutschmannEvaluationAttitudeOrbit2000
+Warning--empty year in deutschmannEvaluationAttitudeOrbit2000
 
 Done.
-You've used 7 entries,
+You've used 12 entries,
             4087 wiz_defined-function locations,
-            870 strings with 9546 characters,
-and the built_in function-call counts, 5066 in all, are:
-= -- 393
-> -- 154
-< -- 25
-+ -- 79
-- -- 33
-* -- 270
-:= -- 777
-add.period$ -- 15
-call.type$ -- 7
-change.case$ -- 8
-chr.to.int$ -- 48
-cite$ -- 16
-duplicate$ -- 367
-empty$ -- 369
-format.name$ -- 38
-if$ -- 1140
+            902 strings with 10922 characters,
+and the built_in function-call counts, 8893 in all, are:
+= -- 706
+> -- 245
+< -- 63
++ -- 129
+- -- 48
+* -- 478
+:= -- 1337
+add.period$ -- 25
+call.type$ -- 12
+change.case$ -- 13
+chr.to.int$ -- 126
+cite$ -- 31
+duplicate$ -- 641
+empty$ -- 629
+format.name$ -- 58
+if$ -- 2013
 int.to.chr$ -- 0
-int.to.str$ -- 7
-missing$ -- 77
-newline$ -- 58
-num.names$ -- 6
-pop$ -- 206
+int.to.str$ -- 12
+missing$ -- 124
+newline$ -- 79
+num.names$ -- 11
+pop$ -- 316
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 383
+skip$ -- 673
 stack$ -- 0
-substring$ -- 150
-swap$ -- 283
-text.length$ -- 9
+substring$ -- 349
+swap$ -- 516
+text.length$ -- 21
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 7
-warning$ -- 9
-while$ -- 16
-width$ -- 8
-write$ -- 100
-(There were 9 warnings)
+type$ -- 12
+warning$ -- 19
+while$ -- 34
+width$ -- 14
+write$ -- 151
+(There were 19 warnings)

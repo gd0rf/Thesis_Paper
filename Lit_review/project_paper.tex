@@ -51,6 +51,16 @@
   \acro{LEO}{Low Earth Orbit}
   \acro{TLE}{Two Line Elements}
   \acro{JSPOC}{Joint Space Operations Ceneter}
+  \acro{RMS}{Root Mean Square}
+  \acro{EKF}{Extended Kalman Filter}
+  \acro{UKF}{Unscented Kalman Filter}
+  \acro{UPF}{Unscented Particle Filter}
+  \acro{SRIF}{Square Root Information Filter}
+  \acro{GNSS}{Global Navigation Satellite System}
+  \acro{MAGSAT}{Magnetic Field Satellite}
+  \acro{LACE}{Low-Power Atmospheric Compensation Experiment}
+  \acro{DE-2}{Dynamics Explorer-2}
+  \acro{BLS}{Batch Least Squares Filter}
 \end{acronym}
 
 % ============================================================
@@ -65,7 +75,7 @@ Space has been at the forefront of research and exploration for decades and much
 \subsection{Security}
 
 
-\begin{table}[H]
+\begin{table}[h]
 \centering
 \caption{Two-Line Element Set Field Definitions}
 \label{tab:tle_format}
@@ -107,16 +117,51 @@ Title & -- & Satellite Name \\
 
 \section{Navigation}
 \ac{LEO} satellite use a variety of methods to assist in their own navigation and an organizartions ability to track them from the ground. The most common methods used to track a satellite form their ground is through \ac{TLE}s. \ac{TLE}s describe the orbital parameters, as seen in Table~\ref{acro:TLE}, that are required for the tracking and locating of specefic satellites during orbit\cite{TwolineElementSets2012}. They provide the specefic time and location that each \ac{LEO} satellite ocuppies to facilitate communication and to ensure that no satellite impacts another. The recordings of a satellites orbit are taken through observation at \ac{JSPOC} and provide consistent snapshot updates of currently recorded TLE's every 8 hours\cite{TwolineElementSets2012}. 
-A majority of these satellites have a mean motion of 90 minutes with an alititude(Circular) of 281.49 km\cite{spacetrack2026}. This provides only a few minutes in which the satellite can be contacted before it is out of range and continues until its next orbit. These minimal contact intervals make it vitally important to accuratly predict when contact can be made and what communications are of import to send during this window.
+A majority of these satellites have a mean motion of 90 minutes with an alititude(Circular) of 281.49 km\cite{spacetrack2026}. This provides only a few minutes in which the satellite can be contacted before it is out of range and continues until its next orbit. These minimal contact intervals make it vitally important to accuratly predict when contact can be made and what communications are of import to send during this window. This creates a need for accurate truly autnomous navigation and orbit determination that does not rely on outside systems to provide accurate information\cite{psiakiGroundTestsMagnetometerbased1993}.
 
-\subsection{Alternative Naviagtion}
-\subsection{Magnetometer And Gravitometer}
-Alternative methods of navigation and orbit determination continue to be explored to provide more robust and accurate systems. A newly explored source of navigation is the use of satellite sensors, like magnetomoeter and gravitometer, in conjunction with accurate modeling to derive orbit parameters without specefic ground station interference\cite{finlayCHAOS7GeomagneticField2020,sunLowEarthOrbitDetermination2016}.
+\section{Alternative Naviagtion}
+Alternative methods of navigation and orbit determination continue to be explored to provide more robust and accurate systems. A newly explored source of navigation is the use of satellite sensors, like magnetomoeter and gravitometer, in conjunction with accurate modeling to derive orbit parameters without specefic ground station interference\cite{finlayCHAOS7GeomagneticField2020,sunLowEarthOrbitDetermination2016, butcherKalmanFilteringObservability2017}. These alternative methods provide an independent system of determination without reliance on outside systems\cite{butcherKalmanFilteringObservability2017}.
+
 %results of magnetometer
+\begin{table}[htbp]
+\centering
+\caption{Position error results for the SRIF and batch LS filters~\cite{psiakiGroundTestsMagnetometerbased1993}}
+\label{tab:magnav_results}
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{|l|l|c|c|c|}
+\hline
+S/C & Filter & RMS/Total & Peak & Along/Cross-Track \\
+\hline
+MAGSAT & SRIF      & --        & $<$8 km & slow drift / periodic \\
+\hline
+MAGSAT & Batch LS  & 4 km RMS  & $<$8 km & 3.4 / 1.8 km RMS \\
+\hline
+DE-2   & SRIF      & --        & --      & not tested \\
+\hline
+DE-2   & Batch LS  & --        & 18 km   & 8--15 km / steady osc. \\
+\hline
+LACE   & SRIF      & --        & --      & not tested \\
+\hline
+LACE   & Batch LS  & 88 km RMS & 125 km  & -- / dominant \\
+\hline
+\end{tabular}
+\end{table}
+
+
+\subsection{Magnetometer}
+It has been proven by Psiaki and Martel\cite{psiakiAutonomousMagneticNavigation} that 5 of the 6 keplerian elements can be determined using only the magnetic field with the missing element being the longitude of the ascending node. Utilizing the magnetometer, known variables like start postion and time of flight along with a series of kalman filters the orbit/position of a satellite can be determined\cite{ningAnalysisFilteringMethods2011,deutschmannEvaluationAttitudeOrbit2000}. 
+
+Pisaki and Martel\cite{psiakiGroundTestsMagnetometerbased1993} utilize a \ac{SRIF} and \ac{BLS} to determine the position of the satellite using only the magnetometer and adjusted based on the truth data. The \ac{SRIF} was tested on the \ac{MAGSAT} launched in October 1979 equipped with a vector magnetometer, the \ac{DE-2} launched in August 1981 equipped with vector magnetometer, and the \ac{LACE} launched in February 1990 equipped with a scalar magnetometer. The results form the tests can be seen in Table~\ref{tab:magnav_results} where the \ac{SRIF} was able to provide a position estimate with a peak error of less than 8 km for the \ac{MAGSAT} and the \ac{BLS} was able to provide a position estimate with a \ac{RMS} error of 4 km for the \ac{MAGSAT}, 18 km for the \ac{DE-2}, and 88 km for the \ac{LACE}\cite{psiakiGroundTestsMagnetometerbased1993}. This demonstrates that the magnetometer can be used to provide a position estimate with a reasonable accuracy, but it is not as accurate as \ac{GNSS} and is dependent on the type of magnetometer used.
+
+A series of kalman filters have been explored by Ning and Ma\cite{ningAnalysisFilteringMethods2011} to determine the method and accuracy of differing strategies, this inclued \ac{UKF}, \ac{EKF}, and \ac{UPF}. A best case \ac{RMS} accuracy of 203.32 meters for an \ac{EKF}, a \ac{RMS} accuracy of 161.3 meters for an \ac{UKF}, and a \ac{RMS} accuracy of 159.7 meters for an \ac{UPF} when considering a known orbit  and 3 second sample rate to filter to a position\cite{ningAnalysisFilteringMethods2011}. The \ac{EKF} introduces a larger error due to the neglected non-linearities in the system, while the \ac{UPF} provides a more accurate result at the cost of increased computational complexity\cite{ningAnalysisFilteringMethods2011}. While this method does not provide the same accuracy of \ac{GNSS} it does provide an independent method of orbit determination that if given the compute power and time can provide a redundant system of orbit determination without reliance on outside systems.
+
+
 
 %results of gravitometer
+\subsection{Gravitometer}
 
-\subsection{Other Methods}
+
 
 
 %results

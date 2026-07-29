@@ -5,23 +5,31 @@
 \citation{TwolineElementSets2012}
 \citation{TwolineElementSets2012}
 \citation{spacetrack2026}
-\citation{finlayCHAOS7GeomagneticField2020,sunLowEarthOrbitDetermination2016}
-\bibstyle{IEEEtran}
-\bibdata{references}
-\bibcite{zhangLEOMegaConstellations2022}{1}
-\bibcite{idanAegisSatSatelliteCybersecurity2025}{2}
-\bibcite{kazemiOrbitDeterminationSpace2024}{3}
+\citation{psiakiGroundTestsMagnetometerbased1993}
+\citation{finlayCHAOS7GeomagneticField2020,sunLowEarthOrbitDetermination2016,butcherKalmanFilteringObservability2017}
+\citation{butcherKalmanFilteringObservability2017}
+\citation{psiakiGroundTestsMagnetometerbased1993}
+\citation{psiakiAutonomousMagneticNavigation}
+\citation{ningAnalysisFilteringMethods2011,deutschmannEvaluationAttitudeOrbit2000}
 \newacro{LEO}[\AC@hyperlink{LEO}{LEO}]{Low Earth Orbit}
 \newacro{TLE}[\AC@hyperlink{TLE}{TLE}]{Two Line Elements}
 \newacro{JSPOC}[\AC@hyperlink{JSPOC}{JSPOC}]{Joint Space Operations Ceneter}
+\newacro{RMS}[\AC@hyperlink{RMS}{RMS}]{Root Mean Square}
+\newacro{EKF}[\AC@hyperlink{EKF}{EKF}]{Extended Kalman Filter}
+\newacro{UKF}[\AC@hyperlink{UKF}{UKF}]{Unscented Kalman Filter}
+\newacro{UPF}[\AC@hyperlink{UPF}{UPF}]{Unscented Particle Filter}
+\newacro{SRIF}[\AC@hyperlink{SRIF}{SRIF}]{Square Root Information Filter}
+\newacro{GNSS}[\AC@hyperlink{GNSS}{GNSS}]{Global Navigation Satellite System}
+\newacro{MAGSAT}[\AC@hyperlink{MAGSAT}{MAGSAT}]{Magnetic Field Satellite}
+\newacro{LACE}[\AC@hyperlink{LACE}{LACE}]{Low-Power Atmospheric Compensation Experiment}
+\newacro{DE-2}[\AC@hyperlink{DE-2}{DE-2}]{Dynamics Explorer-2}
+\newacro{BLS}[\AC@hyperlink{BLS}{BLS}]{Batch Least Squares Filter}
 \@writefile{toc}{\contentsline {section}{\numberline {I}Introduction}{1}{}\protected@file@percent }
 \AC@undonewlabel{acro:LEO}
 \newlabel{acro:LEO}{{I}{1}{}{section.1}{}}
 \acronymused{LEO}
 \@writefile{toc}{\contentsline {section}{\numberline {II}CubeSats}{1}{}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {II-A}}Security}{1}{}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {I}{\ignorespaces Two-Line Element Set Field Definitions}}{1}{}\protected@file@percent }
-\newlabel{tab:tle_format}{{I}{1}{}{table.1}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {III}Navigation}{1}{}\protected@file@percent }
 \acronymused{LEO}
 \AC@undonewlabel{acro:TLE}
@@ -32,15 +40,80 @@
 \AC@undonewlabel{acro:JSPOC}
 \newlabel{acro:JSPOC}{{III}{1}{}{section.3}{}}
 \acronymused{JSPOC}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-A}}Alternative Naviagtion}{1}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-B}}Magnetometer And Gravitometer}{1}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-C}}Other Methods}{1}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-D}}ML Models}{1}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-E}}Machine Learning}{1}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-F}}Neural Networks}{1}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{References}{1}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {I}{\ignorespaces Two-Line Element Set Field Definitions}}{1}{}\protected@file@percent }
+\newlabel{tab:tle_format}{{I}{1}{}{table.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {IV}Alternative Naviagtion}{1}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-A}}Magnetometer}{1}{}\protected@file@percent }
+\citation{psiakiGroundTestsMagnetometerbased1993}
+\citation{psiakiGroundTestsMagnetometerbased1993}
+\citation{ningAnalysisFilteringMethods2011}
+\citation{ningAnalysisFilteringMethods2011}
+\citation{ningAnalysisFilteringMethods2011}
+\bibstyle{IEEEtran}
+\bibdata{references}
+\bibcite{zhangLEOMegaConstellations2022}{1}
+\bibcite{idanAegisSatSatelliteCybersecurity2025}{2}
+\bibcite{kazemiOrbitDeterminationSpace2024}{3}
 \bibcite{TwolineElementSets2012}{4}
 \bibcite{spacetrack2026}{5}
-\bibcite{finlayCHAOS7GeomagneticField2020}{6}
-\bibcite{sunLowEarthOrbitDetermination2016}{7}
+\bibcite{psiakiGroundTestsMagnetometerbased1993}{6}
+\bibcite{finlayCHAOS7GeomagneticField2020}{7}
+\bibcite{sunLowEarthOrbitDetermination2016}{8}
+\bibcite{butcherKalmanFilteringObservability2017}{9}
+\bibcite{psiakiAutonomousMagneticNavigation}{10}
+\bibcite{ningAnalysisFilteringMethods2011}{11}
+\bibcite{deutschmannEvaluationAttitudeOrbit2000}{12}
+\@writefile{lot}{\contentsline {table}{\numberline {II}{\ignorespaces Position error results for the SRIF and batch LS filters~\cite  {psiakiGroundTestsMagnetometerbased1993}}}{2}{}\protected@file@percent }
+\newlabel{tab:magnav_results}{{II}{2}{}{table.2}{}}
+\AC@undonewlabel{acro:SRIF}
+\newlabel{acro:SRIF}{{\mbox  {IV-A}}{2}{}{subsection.4.1}{}}
+\acronymused{SRIF}
+\AC@undonewlabel{acro:BLS}
+\newlabel{acro:BLS}{{\mbox  {IV-A}}{2}{}{subsection.4.1}{}}
+\acronymused{BLS}
+\acronymused{SRIF}
+\AC@undonewlabel{acro:MAGSAT}
+\newlabel{acro:MAGSAT}{{\mbox  {IV-A}}{2}{}{subsection.4.1}{}}
+\acronymused{MAGSAT}
+\AC@undonewlabel{acro:DE-2}
+\newlabel{acro:DE-2}{{\mbox  {IV-A}}{2}{}{subsection.4.1}{}}
+\acronymused{DE-2}
+\AC@undonewlabel{acro:LACE}
+\newlabel{acro:LACE}{{\mbox  {IV-A}}{2}{}{subsection.4.1}{}}
+\acronymused{LACE}
+\acronymused{SRIF}
+\acronymused{MAGSAT}
+\acronymused{BLS}
+\AC@undonewlabel{acro:RMS}
+\newlabel{acro:RMS}{{\mbox  {IV-A}}{2}{}{subsection.4.1}{}}
+\acronymused{RMS}
+\acronymused{MAGSAT}
+\acronymused{DE-2}
+\acronymused{LACE}
+\AC@undonewlabel{acro:GNSS}
+\newlabel{acro:GNSS}{{\mbox  {IV-A}}{2}{}{subsection.4.1}{}}
+\acronymused{GNSS}
+\AC@undonewlabel{acro:UKF}
+\newlabel{acro:UKF}{{\mbox  {IV-A}}{2}{}{subsection.4.1}{}}
+\acronymused{UKF}
+\AC@undonewlabel{acro:EKF}
+\newlabel{acro:EKF}{{\mbox  {IV-A}}{2}{}{subsection.4.1}{}}
+\acronymused{EKF}
+\AC@undonewlabel{acro:UPF}
+\newlabel{acro:UPF}{{\mbox  {IV-A}}{2}{}{subsection.4.1}{}}
+\acronymused{UPF}
+\acronymused{RMS}
+\acronymused{EKF}
+\acronymused{RMS}
+\acronymused{UKF}
+\acronymused{RMS}
+\acronymused{UPF}
+\acronymused{EKF}
+\acronymused{UPF}
+\acronymused{GNSS}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-B}}Gravitometer}{2}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-C}}ML Models}{2}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-D}}Machine Learning}{2}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-E}}Neural Networks}{2}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{References}{2}{}\protected@file@percent }
 \gdef \@abspage@last{2}
