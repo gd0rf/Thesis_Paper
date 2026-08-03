@@ -61,6 +61,12 @@
   \acro{LACE}{Low-Power Atmospheric Compensation Experiment}
   \acro{DE-2}{Dynamics Explorer-2}
   \acro{BLS}{Batch Least Squares Filter}
+  \acro{ILS}{Iterated Least Squares Filter}
+  \acro{ULS}{Unscented Least Squares Filter}
+  \acro{HLS}{Hybrid Least Squares Filter}
+  \acro{GAN}{Generative Adversarial Network}
+  \acro{ML}{Machine Learning}
+  \acro{CNN}{Convolutional Neural Network}
 \end{acronym}
 
 % ============================================================
@@ -71,8 +77,16 @@ Space has been at the forefront of research and exploration for decades and much
 
 
 \section{CubeSats}
+The use of CubeSats has continued to grow in the \ac{LEO} enviroment and has become a major component of the space industry\cite{zhangLEOMegaConstellations2022}. CubeSats are small satellites that are typically built in a standard size and form factor, which allows for easy deployment and integration into existing satellite constellations. This standardization has led to the rapid growth of CubeSat technology including the development of new communication systems\cite{saeedCubeSatCommunicationsRecent2020,rastinasabImplementationDesignRFFrontEnd2021} and onboard processing capabilities\cite{sajjadDesigningReliableLowPower2024}. These developments have enabled CubeSats to perform a wide range of missions, from Earth observation, scientific research, and commercial applications.
 
 \subsection{Security}
+With the rapid growth of CubeSat technology, there has been an increased focus on the vulnerabilities and security risks associated with these small satellites. Much of these now deployed CubeSats are built with a focus on cost and size much like IoT devices, which has led to a lack of security features and protocols\cite{marraFeasibilityCubeSatsApplication2024}. This makes CubeSats a prime target for research into security and resiliancy of these systems.
+
+Ahmad et al.\cite{ahmadGANBasedApproachEnhancing2025} pursure the one tactic of utilizing a \ac{GAN}, a type of neural network, to generate synthetic data to train a \ac{ML} model to detect and mitigate cyber attacks on CubeSats. It utilized the Edge-IIoTset to train the \ac{GAN} to generate the sythetic data and the used the generated data to train a \ac{CNN} plus an autoencoder to detect cyber attacks on IoT devices speceficially aimed at CubeSats. The results displayed a validation accuracy of 96.56\% for the \ac{CNN} in the first expoch showing that the \ac{GAN} was able to generate realistic data that could be used to train a \ac{ML} model to detect cyber attacks on CubeSats. This demonstrates the potential of using \ac{GAN}s to enhance the security of CubeSats and other small satellites. 
+%link to other defensive papers
+
+In the offensive space security domain Calabrese et al.\cite{calabreseHostedPayloadCyber2024} explores the use of a hosted payload to perform a cyber attack against a CubeSate in a simulated enviroment. The study provides a full demonstratable attack chain, inspired by the SPARTA Matrix\cite{aerospaceSPARTA}, the only uses open source tools and software to demonstarate the vulnerabilities of CubeSats and the potential for cyber attacks against them.
+
 
 
 \begin{table}[h]
@@ -159,8 +173,56 @@ A series of kalman filters have been explored by Ning and Ma\cite{ningAnalysisFi
 
 
 %results of gravitometer
-\subsection{Gravitometer}
+\begin{table}[!t]
+\renewcommand{\arraystretch}{1.3}
+\caption{Filter Convergence and Orbit Determination Accuracy}
+\label{tab:filter_results}
+\centering
+\begin{tabular}{|l|c|c|c|}
+\hline
+\textbf{Metric} & \textbf{Adaptive HLS} & \textbf{Adaptive HLS} \\
+ & \textbf{(before drift est.)} & \textbf{(with drift est.)} \\
+\hline
+Radial position error, RMS (m) & 10.8 & 10.4 \\
+\hline
+Along-track position error, RMS (m) & 1208.3 & 677.0 \\
+\hline
+Cross-track position error, RMS (m) & 37.9 & 22.8 \\
+\hline
+Radial velocity error, RMS (m/s) & 1.2 & 0.80 \\
+\hline
+Along-track velocity error, RMS (m/s) & 0.013 & 0.012 \\
+\hline
+Cross-track velocity error, RMS (m/s) & 0.044 & 0.026 \\
+\hline
+\end{tabular}
+\end{table}
 
+
+\begin{table}[!t]
+\renewcommand{\arraystretch}{1.3}
+\caption{RMS Orbit Differences with Respect to EGM2008}
+\label{tab:gravity_model_comparison}
+\centering
+\begin{tabular}{|l|c|c|c|}
+\hline
+\textbf{Gravity Model} & \textbf{Radial} & \textbf{Along-track} & \textbf{Cross-track} \\
+ & \textbf{diff. (m)} & \textbf{diff. (m)} & \textbf{diff. (m)} \\
+\hline
+EGM96 & 1.51 & 3.47 & 2.32 \\
+\hline
+JGM3 & 1.66 & 56.6 & 6.92 \\
+\hline
+EIGEN-6C4 & 0.043 & 13.05 & 0.57 \\
+\hline
+GGM05G & 0.052 & 12.15 & 0.55 \\
+\hline
+\end{tabular}
+\end{table}
+
+
+\subsection{Gravitometer}
+A further exploration of alternative navigation methods has been explored by Sun et aL~\cite{sunLowEarthOrbitDetermination2016}. This study explores the use of an \ac{ILS}, an \ac{ULS}, and the proposed \ac{HLS} utilizing gracity gradient measurements to determine specefic orbital elements of a satellite. These filters were implimented on the Gravity Field and Steady-State Ocean Circulation Explorers 12 hour arc starting from 8 September 2013, 00:00:00 GPS time. This study also makes the assumption that the gravity gradient measurements are optimal and available. A baseline gravity model EGM2008 is used to provide refrence and as a comparison to the EGM96, JGM3, EIGEN-6C4, and GGM05G models~\ref{tab:gravity_model_comparison}. The resilt of the study shows the \ac{HLS} model provides the best results with a \ac{RMS} error of 10.4 meters in the radial position, 677 meters in the along-track position, and 22.8 meters in the cross-track position~\ref{tab:filter_results}. 
 
 
 

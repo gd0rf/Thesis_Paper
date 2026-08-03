@@ -35,6 +35,39 @@ R.~Idan, R.~Peled, A.~Ben Siman~Tov, E.~Markus, B.~Zadov, O.~Chodeda, Y.~Fadida,
 S.~Kazemi, N.~L. Azad, K.~A. Scott, H.~B. Oqab, and G.~B. Dietrich, ``Orbit determination for space situational awareness: {{A}} survey,'' vol. 222, pp. 272--295. [Online]. Available: \url{https://www.sciencedirect.com/science/article/pii/S0094576524003308}
 \BIBentrySTDinterwordspacing
 
+\bibitem{saeedCubeSatCommunicationsRecent2020}
+\BIBentryALTinterwordspacing
+N.~Saeed, A.~Elzanaty, H.~Almorad, H.~Dahrouj, T.~Y. Al-Naffouri, and M.-S. Alouini. {{CubeSat Communications}}: {{Recent Advances}} and {{Future Challenges}}. [Online]. Available: \url{http://arxiv.org/abs/1908.09501}
+\BIBentrySTDinterwordspacing
+
+\bibitem{rastinasabImplementationDesignRFFrontEnd2021}
+\BIBentryALTinterwordspacing
+V.~Rastinasab and H.~Weidong, ``Implementation and {{Design}} of {{RF-Front-End Telemetry Tracking}} and {{Command Subsystem}} of a {{CubeSat With}} 500-km {{Altitude}},'' vol.~2, no.~1, pp. 43--47. [Online]. Available: \url{https://ieeexplore.ieee.org/document/9205829/}
+\BIBentrySTDinterwordspacing
+
+\bibitem{sajjadDesigningReliableLowPower2024}
+\BIBentryALTinterwordspacing
+W.~Sajjad, A.~Shafique, and R.~Mahmood, ``Designing of {{Reliable}}, {{Low-Power}}, and {{Performance-Efficient Onboard Computer Architecture}} for {{CubeSats}},'' vol.~5, no.~2, pp. 59--72. [Online]. Available: \url{https://ieeexplore.ieee.org/document/10356635/}
+\BIBentrySTDinterwordspacing
+
+\bibitem{marraFeasibilityCubeSatsApplication2024}
+\BIBentryALTinterwordspacing
+G.~Marra, U.~Planta, P.~Wüstenberg, and A.~Abbasi, ``On the {{Feasibility}} of {{CubeSats Application Sandboxing}} for {{Space Missions}},'' in \emph{Proceedings 2024 {{Workshop}} on {{Security}} of {{Space}} and {{Satellite Systems}}}. [Online]. Available: \url{http://arxiv.org/abs/2404.04127}
+\BIBentrySTDinterwordspacing
+
+\bibitem{ahmadGANBasedApproachEnhancing2025}
+\BIBentryALTinterwordspacing
+S.~Z. Ahmad, F.~Qamar, H.~Alshehri, F.~Jeribi, A.~Tahir, S.~T. Siddiqui, and J.~Ramakrishnan, ``A {{GAN-Based Approach}} for enhancing security in satellite based {{IoT}} networks using {{MPI}} enabled {{HPC}},'' vol.~20, no.~9, p. e0331019. [Online]. Available: \url{https://dx.plos.org/10.1371/journal.pone.0331019}
+\BIBentrySTDinterwordspacing
+
+\bibitem{calabreseHostedPayloadCyber2024}
+\BIBentryALTinterwordspacing
+M.~Calabrese, G.~Kavallieratos, and G.~Falco, ``A {{Hosted Payload Cyber Attack Against Satellites}},'' in \emph{{{AIAA SCITECH}} 2024 {{Forum}}}.\hskip 1em plus 0.5em minus 0.4em\relax {American Institute of Aeronautics and Astronautics}. [Online]. Available: \url{https://arc.aiaa.org/doi/10.2514/6.2024-0270}
+\BIBentrySTDinterwordspacing
+
+\bibitem{aerospaceSPARTA}
+{The Aerospace Corporation}, ``{SPARTA: Space Attack Research and Tactic Analysis},'' \url{https://sparta.aerospace.org/}, accessed: August 3, 2026.
+
 \bibitem{TwolineElementSets2012}
 \BIBentryALTinterwordspacing
 Two-line element sets - {{Practice}} and use. ResearchGate. [Online]. Available: \url{https://www.researchgate.net/publication/289774073_Two-line_element_sets_-_Practice_and_use}
