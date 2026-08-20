@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.10.17)  3 AUG 2026 14:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.10.17)  20 AUG 2026 12:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -292,19 +292,28 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 Package acronym Info: Label `acro:LEO' newly defined as it shall be overridden
 although it is yet undefined on input line 76.
+<graphics/leo_orbit.pdf, id=1, 438.47615pt x 323.57086pt>
+File: graphics/leo_orbit.pdf Graphic file (type pdf)
+<use graphics/leo_orbit.pdf>
+Package pdftex.def Info: graphics/leo_orbit.pdf  used on input line 81.
+(pdftex.def)             Requested size: 252.0pt x 185.96292pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 
 
 Package acronym Info: Label `acro:GAN' newly defined as it shall be overridden
-although it is yet undefined on input line 85.
+although it is yet undefined on input line 92.
 Package acronym Info: Label `acro:ML' newly defined as it shall be overridden
-although it is yet undefined on input line 85.
+although it is yet undefined on input line 92.
 Package acronym Info: Label `acro:CNN' newly defined as it shall be overridden
-although it is yet undefined on input line 85.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 129.
+although it is yet undefined on input line 92.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 136.
 (c:/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 129.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 136.
  (c:/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
@@ -312,52 +321,50 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 Package acronym Info: Label `acro:TLE' newly defined as it shall be overridden
-although it is yet undefined on input line 133.
+although it is yet undefined on input line 140.
 Package acronym Info: Label `acro:JSPOC' newly defined as it shall be overridden
-although it is yet undefined on input line 133.
+although it is yet undefined on input line 140.
 
 
 [1{c:/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2025/texmf-dist/fonts/enc/dvips/base/8r.enc}
 
 
-]
+ <./graphics/leo_orbit.pdf>]
 
 Package acronym Info: Label `acro:SRIF' newly defined as it shall be overridden
-although it is yet undefined on input line 169.
+although it is yet undefined on input line 176.
 Package acronym Info: Label `acro:BLS' newly defined as it shall be overridden
-although it is yet undefined on input line 169.
+although it is yet undefined on input line 176.
 Package acronym Info: Label `acro:MAGSAT' newly defined as it shall be overridden
-although it is yet undefined on input line 169.
+although it is yet undefined on input line 176.
 Package acronym Info: Label `acro:DE-2' newly defined as it shall be overridden
-although it is yet undefined on input line 169.
+although it is yet undefined on input line 176.
 Package acronym Info: Label `acro:LACE' newly defined as it shall be overridden
-although it is yet undefined on input line 169.
+although it is yet undefined on input line 176.
 Package acronym Info: Label `acro:RMS' newly defined as it shall be overridden
-although it is yet undefined on input line 169.
+although it is yet undefined on input line 176.
 Package acronym Info: Label `acro:GNSS' newly defined as it shall be overridden
-although it is yet undefined on input line 169.
+although it is yet undefined on input line 176.
 Package acronym Info: Label `acro:UKF' newly defined as it shall be overridden
-although it is yet undefined on input line 171.
+although it is yet undefined on input line 178.
 Package acronym Info: Label `acro:EKF' newly defined as it shall be overridden
-although it is yet undefined on input line 171.
+although it is yet undefined on input line 178.
 Package acronym Info: Label `acro:UPF' newly defined as it shall be overridden
-although it is yet undefined on input line 171.
+although it is yet undefined on input line 178.
 
-Overfull \hbox (23.46992pt too wide) in paragraph at lines 181--199
- [][] 
- []
 
+[2]
 Package acronym Info: Label `acro:ILS' newly defined as it shall be overridden
-although it is yet undefined on input line 225.
+although it is yet undefined on input line 233.
 Package acronym Info: Label `acro:ULS' newly defined as it shall be overridden
-although it is yet undefined on input line 225.
+although it is yet undefined on input line 233.
 Package acronym Info: Label `acro:HLS' newly defined as it shall be overridden
-although it is yet undefined on input line 225.
+although it is yet undefined on input line 233.
 
 
-[2] (./project_paper.bbl
+(./project_paper.bbl
 
-)
+[3])
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -371,25 +378,29 @@ Before submitting the final camera ready copy, remember to:
 
 
 
-[3] (./project_paper.aux)
+
+
+[4
+
+] (./project_paper.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-09-02>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 5090 strings out of 467748
- 77892 string characters out of 5431137
- 518916 words of memory out of 5000000
- 33723 multiletter control sequences out of 15000+600000
- 665935 words of font info for 111 fonts, out of 8000000 for 9000
+ 5119 strings out of 467748
+ 78416 string characters out of 5431137
+ 517985 words of memory out of 5000000
+ 33746 multiletter control sequences out of 15000+600000
+ 670073 words of font info for 121 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,11n,65p,1205b,358s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on project_paper.pdf (3 pages, 90299 bytes).
+ 57i,11n,65p,1472b,358s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on project_paper.pdf (4 pages, 203787 bytes).
 PDF statistics:
- 45 PDF objects out of 1000 (max. 8388607)
- 27 compressed objects within 1 object stream
+ 118 PDF objects out of 1000 (max. 8388607)
+ 74 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

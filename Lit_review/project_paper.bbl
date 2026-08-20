@@ -109,4 +109,9 @@ X.~Ning, X.~Ma, C.~Peng, W.~Quan, and J.~Fang, ``Analysis of {{Filtering Methods
 \bibitem{deutschmannEvaluationAttitudeOrbit2000}
 J.~K. Deutschmann and I.~Y. Bar-Itzhack, ``Evaluation of attitude and orbit estimation using actual earth magnetic field data,'' vol.~24, no.~3, pp. 616--623.
 
+\bibitem{liAutonomousOrbitAttitude2018}
+\BIBentryALTinterwordspacing
+M.~Li and B.~Xu, ``Autonomous orbit and attitude determination for {{Earth}} satellites using images of regular-shaped ground objects,'' vol.~80, pp. 192--202. [Online]. Available: \url{https://www.sciencedirect.com/science/article/pii/S1270963818304620}
+\BIBentrySTDinterwordspacing
+
 \end{thebibliography}

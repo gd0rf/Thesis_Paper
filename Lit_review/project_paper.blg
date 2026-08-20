@@ -38,47 +38,49 @@ Warning--empty journal in ningAnalysisFilteringMethods2011
 Warning--empty year in ningAnalysisFilteringMethods2011
 Warning--empty journal in deutschmannEvaluationAttitudeOrbit2000
 Warning--empty year in deutschmannEvaluationAttitudeOrbit2000
+Warning--empty journal in liAutonomousOrbitAttitude2018
+Warning--empty year in liAutonomousOrbitAttitude2018
 
 Done.
-You've used 19 entries,
+You've used 20 entries,
             4087 wiz_defined-function locations,
-            945 strings with 12996 characters,
-and the built_in function-call counts, 13266 in all, are:
-= -- 1048
-> -- 367
-< -- 84
-+ -- 189
-- -- 74
-* -- 698
-:= -- 2024
-add.period$ -- 40
-call.type$ -- 19
-change.case$ -- 21
-chr.to.int$ -- 162
-cite$ -- 46
-duplicate$ -- 974
-empty$ -- 978
-format.name$ -- 90
-if$ -- 3007
+            952 strings with 13264 characters,
+and the built_in function-call counts, 14101 in all, are:
+= -- 1117
+> -- 384
+< -- 94
++ -- 199
+- -- 76
+* -- 743
+:= -- 2146
+add.period$ -- 42
+call.type$ -- 20
+change.case$ -- 22
+chr.to.int$ -- 186
+cite$ -- 49
+duplicate$ -- 1029
+empty$ -- 1034
+format.name$ -- 93
+if$ -- 3197
 int.to.chr$ -- 0
-int.to.str$ -- 19
-missing$ -- 194
-newline$ -- 112
-num.names$ -- 18
-pop$ -- 502
+int.to.str$ -- 20
+missing$ -- 202
+newline$ -- 117
+num.names$ -- 19
+pop$ -- 521
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 1007
+skip$ -- 1070
 stack$ -- 0
-substring$ -- 457
-swap$ -- 756
-text.length$ -- 30
+substring$ -- 514
+swap$ -- 805
+text.length$ -- 32
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 19
-warning$ -- 27
-while$ -- 50
-width$ -- 21
-write$ -- 225
-(There were 27 warnings)
+type$ -- 20
+warning$ -- 29
+while$ -- 55
+width$ -- 22
+write$ -- 236
+(There were 29 warnings)

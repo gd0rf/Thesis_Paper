@@ -39,6 +39,8 @@
 \@writefile{toc}{\contentsline {section}{\numberline {II}CubeSats}{1}{}\protected@file@percent }
 \acronymused{LEO}
 \@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {II-A}}Security}{1}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Low Earth orbit (LEO) altitude range relative to MEO and GEO.}}{1}{}\protected@file@percent }
+\newlabel{fig:leo-orbit}{{1}{1}{}{figure.1}{}}
 \AC@undonewlabel{acro:GAN}
 \newlabel{acro:GAN}{{\mbox  {II-A}}{1}{}{subsection.2.1}{}}
 \acronymused{GAN}
@@ -53,16 +55,6 @@
 \acronymused{GAN}
 \acronymused{ML}
 \acronymused{GAN}
-\@writefile{toc}{\contentsline {section}{\numberline {III}Navigation}{1}{}\protected@file@percent }
-\acronymused{LEO}
-\AC@undonewlabel{acro:TLE}
-\newlabel{acro:TLE}{{III}{1}{}{section.3}{}}
-\acronymused{TLE}
-\acronymused{TLE}
-\acronymused{LEO}
-\AC@undonewlabel{acro:JSPOC}
-\newlabel{acro:JSPOC}{{III}{1}{}{section.3}{}}
-\acronymused{JSPOC}
 \citation{finlayCHAOS7GeomagneticField2020,sunLowEarthOrbitDetermination2016,butcherKalmanFilteringObservability2017}
 \citation{butcherKalmanFilteringObservability2017}
 \citation{psiakiGroundTestsMagnetometerbased1993}
@@ -73,15 +65,22 @@
 \citation{ningAnalysisFilteringMethods2011}
 \citation{ningAnalysisFilteringMethods2011}
 \citation{ningAnalysisFilteringMethods2011}
-\citation{sunLowEarthOrbitDetermination2016}
 \@writefile{lot}{\contentsline {table}{\numberline {I}{\ignorespaces Two-Line Element Set Field Definitions}}{2}{}\protected@file@percent }
 \newlabel{tab:tle_format}{{I}{2}{}{table.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {III}Navigation}{2}{}\protected@file@percent }
+\acronymused{LEO}
+\AC@undonewlabel{acro:TLE}
+\newlabel{acro:TLE}{{III}{2}{}{section.3}{}}
+\acronymused{TLE}
+\acronymused{TLE}
+\acronymused{LEO}
+\AC@undonewlabel{acro:JSPOC}
+\newlabel{acro:JSPOC}{{III}{2}{}{section.3}{}}
+\acronymused{JSPOC}
 \@writefile{toc}{\contentsline {section}{\numberline {IV}Alternative Naviagtion}{2}{}\protected@file@percent }
 \@writefile{lot}{\contentsline {table}{\numberline {II}{\ignorespaces Position error results for the SRIF and batch LS filters~\cite  {psiakiGroundTestsMagnetometerbased1993}}}{2}{}\protected@file@percent }
 \newlabel{tab:magnav_results}{{II}{2}{}{table.2}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-A}}Magnetometer}{2}{}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {III}{\ignorespaces Filter Convergence and Orbit Determination Accuracy}}{2}{}\protected@file@percent }
-\newlabel{tab:filter_results}{{III}{2}{}{table.3}{}}
 \AC@undonewlabel{acro:SRIF}
 \newlabel{acro:SRIF}{{\mbox  {IV-A}}{2}{}{subsection.4.1}{}}
 \acronymused{SRIF}
@@ -128,12 +127,8 @@
 \acronymused{EKF}
 \acronymused{UPF}
 \acronymused{GNSS}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-B}}Gravitometer}{2}{}\protected@file@percent }
-\AC@undonewlabel{acro:ILS}
-\newlabel{acro:ILS}{{\mbox  {IV-B}}{2}{}{subsection.4.2}{}}
-\acronymused{ILS}
-\AC@undonewlabel{acro:ULS}
-\newlabel{acro:ULS}{{\mbox  {IV-B}}{2}{}{subsection.4.2}{}}
+\citation{sunLowEarthOrbitDetermination2016}
+\citation{liAutonomousOrbitAttitude2018}
 \bibstyle{IEEEtran}
 \bibdata{references}
 \bibcite{zhangLEOMegaConstellations2022}{1}
@@ -141,6 +136,31 @@
 \bibcite{kazemiOrbitDeterminationSpace2024}{3}
 \bibcite{saeedCubeSatCommunicationsRecent2020}{4}
 \bibcite{rastinasabImplementationDesignRFFrontEnd2021}{5}
+\@writefile{lot}{\contentsline {table}{\numberline {III}{\ignorespaces Filter Convergence and Orbit Determination Accuracy}}{3}{}\protected@file@percent }
+\newlabel{tab:filter_results}{{III}{3}{}{table.3}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {IV}{\ignorespaces RMS Orbit Differences with Respect to EGM2008}}{3}{}\protected@file@percent }
+\newlabel{tab:gravity_model_comparison}{{IV}{3}{}{table.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-B}}Gravitometer}{3}{}\protected@file@percent }
+\AC@undonewlabel{acro:ILS}
+\newlabel{acro:ILS}{{\mbox  {IV-B}}{3}{}{subsection.4.2}{}}
+\acronymused{ILS}
+\AC@undonewlabel{acro:ULS}
+\newlabel{acro:ULS}{{\mbox  {IV-B}}{3}{}{subsection.4.2}{}}
+\acronymused{ULS}
+\AC@undonewlabel{acro:HLS}
+\newlabel{acro:HLS}{{\mbox  {IV-B}}{3}{}{subsection.4.2}{}}
+\acronymused{HLS}
+\acronymused{HLS}
+\acronymused{RMS}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-C}}ML Models}{3}{}\protected@file@percent }
+\acronymused{ML}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-D}}Visual Model}{3}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {V}{\ignorespaces The initial Kepler orbit elements of the satellite.}}{3}{}\protected@file@percent }
+\newlabel{tab:orbit_elements}{{V}{3}{}{table.5}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {VI}{\ignorespaces Comparison of OAD Performance Using Images of Four Regular-Shaped Objects}}{3}{}\protected@file@percent }
+\newlabel{tab:oad_comparison}{{VI}{3}{}{table.6}{}}
+\acronymused{ML}
+\@writefile{toc}{\contentsline {section}{References}{3}{}\protected@file@percent }
 \bibcite{sajjadDesigningReliableLowPower2024}{6}
 \bibcite{marraFeasibilityCubeSatsApplication2024}{7}
 \bibcite{ahmadGANBasedApproachEnhancing2025}{8}
@@ -155,16 +175,5 @@
 \bibcite{psiakiAutonomousMagneticNavigation}{17}
 \bibcite{ningAnalysisFilteringMethods2011}{18}
 \bibcite{deutschmannEvaluationAttitudeOrbit2000}{19}
-\@writefile{lot}{\contentsline {table}{\numberline {IV}{\ignorespaces RMS Orbit Differences with Respect to EGM2008}}{3}{}\protected@file@percent }
-\newlabel{tab:gravity_model_comparison}{{IV}{3}{}{table.4}{}}
-\acronymused{ULS}
-\AC@undonewlabel{acro:HLS}
-\newlabel{acro:HLS}{{\mbox  {IV-B}}{3}{}{subsection.4.2}{}}
-\acronymused{HLS}
-\acronymused{HLS}
-\acronymused{RMS}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-C}}ML Models}{3}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-D}}Machine Learning}{3}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-E}}Neural Networks}{3}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{References}{3}{}\protected@file@percent }
-\gdef \@abspage@last{3}
+\bibcite{liAutonomousOrbitAttitude2018}{20}
+\gdef \@abspage@last{4}
